@@ -1,4 +1,4 @@
-import { ArrowDown } from "lucide-react"
+import { ArrowDown, Github, Linkedin } from "lucide-react"
 import { useEffect, useState } from "react"
 
 export const HeroSection = () => {
@@ -26,13 +26,23 @@ export const HeroSection = () => {
                     </h1>
 
                     <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3"> 
-                        I'm a postgraduate masters student studying AI at Kings College London with a passion for software development. 
-                        I have a bachelors Computer Science degree from the University of Bristol with a ?? class degree.
+                        I am currently pursuing a Master's degree in Artificial Intelligence at King's College London and 
+                        hold a Bachelor's degree in Computer Science from the University of Bristol, where I graduated with a 1st class honours.
                     </p>
 
-                    <div className="pt-4 opacity-0 animate-fade-in-delay-4">
-                        <a href="#projects" className="cosmic-button">
-                            View My Work
+                    <div className="pt-0 opacity-0 animate-fade-in-delay-4 flex justify-center gap-x-4">
+                        <a href="https://www.linkedin.com/in/dhillon-thurairatnam/" target="_blank" rel="noopener noreferrer"
+                            className="relative px-4 py-4 rounded-full border border-primary text-primary bg-background transition-colors hover:scale-105 duration-300 flex items-center gap-2
+                            overflow-hidden before:content-[''] before:absolute before:inset-0 before:rounded-full
+                            before:bg-primary/10 before:opacity-0 hover:before:opacity-100">
+                            <Linkedin className="w-6 h-6"/>
+                        </a>
+
+                        <a href="https://github.com/Dhill2274" target="_blank" rel="noopener noreferrer" 
+                            className="relative px-4 py-4 rounded-full border border-primary text-primary bg-background transition-colors hover:scale-105 duration-300 flex items-center gap-2
+                            overflow-hidden before:content-[''] before:absolute before:inset-0 before:rounded-full
+                            before:bg-primary/10 before:opacity-0 hover:before:opacity-100">
+                            <Github className="w-6 h-6"/>
                         </a>
                     </div>
                 </div>

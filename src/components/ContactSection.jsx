@@ -4,22 +4,48 @@ import { useToast } from "../hooks/use-toast";
 import { useState } from "react";
 
 export const ContactSection = () => {
+
     const {toast} = useToast();
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const[formData, setFormData] = useState({
+        name: "",
+        email: "",
+        message: "",});
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
         setIsSubmitting(true);
-        setTimeout(() => {
-            toast({
-                title: "Message Sent",
-                description: "Thank you for your message! I'll get back to you soon.",
-                duration: 5000,
-                variant: "success",
+
+        try {
+            const response = await fetch("http://localhost:8000/api/send-email", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData),
             });
+
+            const result = await response.json();
+
+            if (result.success) {
+                toast({
+                    title: "Message Sent",
+                    description: "Thank you for your message! I'll get back to you soon.",
+                    duration: 5000,
+                    variant: "success",
+                });
+                setFormData({ name: "", email: "", message: "" });
+            } else {
+                throw new Error(result.error || "Unknown error");
+            }
+        } catch (error) {
+            toast({
+                title: "Error",
+                description: "There was an error sending your message. Please try again later.",
+                variant: "destructive",
+            });
+            console.error("Error sending email:", error);
+        } finally {
             setIsSubmitting(false);
         }
-        , 1670);
     };
 
     return (
@@ -31,7 +57,7 @@ export const ContactSection = () => {
                     Get In <span className="text-primary"> Touch</span>
                 </h2>
 
-                <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+                <p className="text-center text-muted-foreground mb-7 max-w-2xl mx-auto">
                     Feel free to contact me directly at&nbsp;
                     <a href="mailto:dhillon.thu@icloud.com">
                         <u>dhillon.thu@icloud.com</u>
@@ -46,9 +72,11 @@ export const ContactSection = () => {
                                 type="text" 
                                 id="name" 
                                 name="name" 
-                                required 
+                                required
+                                value={formData.name}
                                 className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
                                 placeholder="Your Name"
+                                onChange={(e) => setFormData({...formData, name: e.target.value})}
                             />
                         </div>
 
@@ -57,9 +85,11 @@ export const ContactSection = () => {
                                 type="email" 
                                 id="email" 
                                 name="email" 
-                                required 
+                                required
+                                value={formData.email}
                                 className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
                                 placeholder="Your Email"
+                                onChange={(e) => setFormData({...formData, email: e.target.value})}
                             />
                         </div>
 
@@ -67,16 +97,19 @@ export const ContactSection = () => {
                             <textarea 
                                 id="message" 
                                 name="message" 
-                                required 
+                                required
+                                value={formData.message}
+                                maxLength={1000}
                                 className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none h-38"
                                 placeholder="Your Message"
+                                onChange={(e) => setFormData({...formData, message: e.target.value})}
                             />
                         </div>
 
                         <button
                             type="submit"
                             className={cn(
-                                "w-full flex items-center justify-center gap-2",
+                                ":w-1/3 flex items-center justify-center gap-2",
                                 isSubmitting
                                     ? "cosmic-button bg-gray-400 text-gray-700 cursor-not-allowed border-gray-300 hover:scale-100"
                                     : "cosmic-button",

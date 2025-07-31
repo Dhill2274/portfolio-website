@@ -14,13 +14,15 @@ const skills = [
     { name: 'React', level: 'Advanced' },
     { name: 'JSON', level: 'Advanced' },
     { name: 'SQL', level: 'Advanced' },
+    { name: 'TensorFlow', level: 'Advanced' },
+    { name: 'OpenCV', level: 'Advanced' },
     { name: 'Linux', level: 'Advanced' },
+    { name: 'Docker', level: 'Advanced' },
     { name: 'Figma', level: 'Advanced' },
     { name: 'Numpy', level: 'Advanced' },
     { name: 'Pandas', level: 'Advanced' },
     { name: 'Dash', level: 'Advanced' },
-    { name: 'Algorithms', level: 'Advanced' },
-    { name: 'AI', level: 'Advanced' },
+    { name: 'Algorithms & Data Structures', level: 'Advanced' },
     { name: 'Git/Github', level: 'Advanced' },
 ]
 
@@ -32,15 +34,13 @@ export const SkillsSection = () => {
                 My<span className="text-primary"> Skills</span>
             </h2>
 
-        <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-6">
+        <ul className="flex flex-wrap justify-center gap-2 text-base">
             {skills.map((skill, index) => (
-                <div key={index} className="bg-card p-6 rounded-lg shadow-xs card-hover hover:scale-107">
-                    <div className="text-center mb-4">
-                        <h3 className="font-semibold text-lg">{skill.name}</h3>
-                    </div>
-                </div>
+                <li key={index} className="bg-card border border-black/10 rounded-xl px-5 py-3 shadow-xs card-hover hover:text-primary transition-colors duration-200">
+                    {skill.name}
+                </li>
             ))}
-        </div>
+        </ul>
         </div>
     </section>
     );

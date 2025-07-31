@@ -1,4 +1,4 @@
-import { ArrowDownToLine, BrainCircuit, Code, SendHorizonal } from "lucide-react";
+import { ArrowDownToLine, BrainCircuit, Code, Handshake, SendHorizonal } from "lucide-react";
 
 export const About = () => {
     return (
@@ -15,17 +15,19 @@ export const About = () => {
                         <h3 className="text-2xl font-semibold">Passionate Web Developer & Tech Creator</h3>
 
                         <p className="text-muted-foreground">
-                            With over 3 years of experience in web development, I specialise in creating
-                            responsive, accessible, and user-friendly web applications.
+                            With over 3 years of experience in computing, I have a particular interest in full-stack
+                            software development and AI.
                         </p>
 
                         <p className="text-muted-foreground">
-                            I'm passionate about creating elegant solutions to complex problems, and I'm constantly learning
-                            new technologies to enhance my skills and deliver the best results for my clients.
+                            My academic, extracurricular and professional experience has provided me a solid foundation in full-stack development,
+                             algorithms, ML and mathematics.
+                            I'm passionate about using AI to create elegant solutions to solve complex problems. Checkout my github
+                            to see some of my projects!
                         </p>
 
                         <p className="text-muted-foreground">
-                            Please contact me below if you have any queries or find out more about me on my LinkedIn!
+                            Please contact me if you have any queries or find out more about me on my LinkedIn!
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -76,12 +78,12 @@ export const About = () => {
                             <div className="flex items-start gap-4">
 
                                 <div className="p-3 rounded-full bg-primary/10">
-                                    <Code className="h-6 w-6 text-primary"/>
+                                    <Handshake className="h-6 w-6 text-primary"/>
                                 </div>
                                 <div className="text-left">
-                                    <h4 className="font-semibold text-lg">Machine Learning</h4>
+                                    <h4 className="font-semibold text-lg">Team Collaboration</h4>
                                     <p className="text-muted-foreground">
-                                        Building and integrating MLP models into software.
+                                        Experience in effective communication and cross-functional collaboration.
                                     </p>
                                 </div>
                             </div>
