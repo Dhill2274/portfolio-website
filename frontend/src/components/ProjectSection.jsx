@@ -7,13 +7,13 @@ const projects = [
         description: "Personal website for showcasing my skills and the projects that I've worked on to serve as a digital portfolio.",
         link: "https://github.com/Dhill2274/portfolio-website",
         image: "/projects/website.png",
-        tags: ["ReactJS", "TailwindCSS"]
+        tags: ["ReactJS", "TailwindCSS", "express.js"]
     },
     {
         id: 7,
         title: "RAWL-E AI Agents",
         description: "Developed ethical multi-agent reinforcement learning systems using DQN and Rawlsian principles. \
-        Designed novel agent architectures to promote fairness in resource-sharing environments, acheiving emergent ethical norms and improved outcomes for disadvantaged agents",
+        Designed novel agent architectures to promote fairness in resource-sharing environments, acheiving emergent ethical norms and improved outcomes for disadvantaged agents.",
         link: "src/assets/Dhillon_Thurairatnam_Dissertation.pdf",
         image: "/projects/RAWL-E.png",
         tags: ["Python", "TensorFlow", "ABM"]
@@ -31,7 +31,7 @@ const projects = [
         id: 5,
         title: "Zombie Apocalypse Game",
         description: "Constructed a top-down zombie shooting game in 24 hours. Contributed to the core gameplay logic, clean code structure, and rapid bug fixing. \
-        Gained hands-on experience with Unity and C#, collaborating closely on design and development under tight constraints.",
+        Gained hands-on experience with Unity and C# while collaborating on design and development under tight constraints.",
         link: "https://github.com/Dhill2274/Halloween-Gamejam-2024",
         image: "/projects/zombie_apocalypse.png",
         tags: ["C#", "Unity"]
@@ -41,7 +41,7 @@ const projects = [
         title: "No-Entry Sign Detector",
         description: 'Built a system to detect "No-Entry" signs using classical computer vision. Trained a custom Viola-Jones detector with Haar features via AdaBoost on test images. \
          On top of this, I implemented my own Circle Hough Transform and colour thresholder to improve detection accuracy.',
-        link: "https://github.com/Dhill2274/portfolio-website",
+        link: "https://github.com/Dhill2274/no-entry-detector",
         image: "/projects/no_entry_detector.png",
         tags: ["Python", "OpenCV"]
     },
@@ -49,8 +49,8 @@ const projects = [
         id: 3,
         title: "MedicRecall Revision App",
         description: "As a client liasson, project manager and software developer, I developed \
-        a cross-platform flashcard-based revision app for medical students, implementing a spaced repetition algorithm and delivering user notifications via a Python server hosted on Google Cloud.",
-        link: "https://github.com/Dhill2274/portfolio-website",
+        a cross-platform flashcard-based revision app for the NHS, implementing a spaced repetition algorithm and delivering user notifications via a Python server hosted on Google Cloud.",
+        link: "https://medicrecall.com",
         image: "/projects/medicrecall.png",
         tags: ["Flutter", "Firebase", "Google Cloud"]
     },
@@ -59,7 +59,7 @@ const projects = [
         title: "Game of Life Simulation",
         description: "Leveraged Go's parallel and distributed computing to optimise Conway's Game of Life and identified performance bottlenecks via CPU profiling. \
         Improved network efficiency with a halo exchange system across AWS EC2 instances, ensuring fault tolerance and scalability.",
-        link: "https://github.com/Dhill2274/portfolio-website",
+        link: "https://github.com/Dhill2274/CSA-GOL-Parallel",
         image: "/projects/gol.png",
         tags: ["Go", "AWS"]
     },
@@ -68,7 +68,7 @@ const projects = [
         title: "Scotland Yard",
         description: "Modelled the game mechanics and implemented an AI agent using Dijkstra's algorithm and \
         a Mini-Max game tree to optimise the winning potential with a custom scoring function.",
-        link: "https://github.com/Dhill2274/portfolio-website",
+        link: "https://github.com/yh22668/java-cw",
         image: "/projects/scotland_yard.png",
         tags: ["Java", "OOP"]
     }

@@ -12,7 +12,7 @@ export const About = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
                     <div className="space-y-6">
-                        <h3 className="text-2xl font-semibold">Passionate Web Developer & Tech Creator</h3>
+                        <h3 className="text-2xl font-semibold">Full-Stack Developer & AI Enthusiast</h3>
 
                         <p className="text-muted-foreground">
                             With over 3 years of experience in computing, I have a particular interest in full-stack
@@ -20,9 +20,9 @@ export const About = () => {
                         </p>
 
                         <p className="text-muted-foreground">
-                            My academic, extracurricular and professional experience has provided me a solid foundation in full-stack development,
+                            My academic, extracurricular and professional experience has provided me a solid foundation in programming,
                              algorithms, ML and mathematics.
-                            I'm passionate about using AI to create elegant solutions to solve complex problems. Checkout my github
+                            I am passionate about leveraging technologies that can learn and adapt autonomously to develop solutions for complex challenges. Checkout my github
                             to see some of my projects!
                         </p>
 
@@ -68,7 +68,7 @@ export const About = () => {
                                 <div className="text-left">
                                     <h4 className="font-semibold text-lg">Machine Learning</h4>
                                     <p className="text-muted-foreground">
-                                        Building and integrating MLP models into software.
+                                        Engineering and integrating MLP models into software.
                                     </p>
                                 </div>
                             </div>

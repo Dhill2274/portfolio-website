@@ -3,6 +3,7 @@ import { cn } from "../lib/utils";
 import { useToast } from "../hooks/use-toast";
 import { useState } from "react";
 
+const API_URL = import.meta.env.VITE_API_URL;
 export const ContactSection = () => {
 
     const {toast} = useToast();
@@ -17,7 +18,7 @@ export const ContactSection = () => {
         setIsSubmitting(true);
 
         try {
-            const response = await fetch("http://localhost:8000/api/send-email", {
+            const response = await fetch(API_URL, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData),
