@@ -34,7 +34,7 @@ export const About = () => {
                             <a href="#contact" className="cosmic-button flex items-center gap-2">
                                 Get In Touch <SendHorizonal />
                             </a>
-                            <a href="src/assets/Dhillon Thurairatnam CV.pdf" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 hover:scale-105 transition-colors duration-300 flex items-center gap-2"
+                            <a href="/Dhillon Thurairatnam CV.pdf" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 hover:scale-105 transition-colors duration-300 flex items-center gap-2"
                                 target="_blank" rel="noopener noreferrer"
                             >
                                 Download CV <ArrowDownToLine />

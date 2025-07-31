@@ -14,7 +14,7 @@ const projects = [
         title: "RAWL-E AI Agents",
         description: "Developed ethical multi-agent reinforcement learning systems using DQN and Rawlsian principles. \
         Designed novel agent architectures to promote fairness in resource-sharing environments, acheiving emergent ethical norms and improved outcomes for disadvantaged agents.",
-        link: "src/assets/Dhillon_Thurairatnam_Dissertation.pdf",
+        link: "/Dhillon_Thurairatnam_Dissertation.pdf",
         image: "/projects/RAWL-E.png",
         tags: ["Python", "TensorFlow", "ABM"]
     },
