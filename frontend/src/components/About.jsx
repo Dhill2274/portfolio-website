@@ -31,10 +31,10 @@ export const About = () => {
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-                            <a href="#contact" className="cosmic-button flex items-center gap-2">
+                            <a href="#contact" className="cosmic-button flex items-center gap-2 w-auto max-w-fit">
                                 Get In Touch <SendHorizonal />
                             </a>
-                            <a href="/Dhillon Thurairatnam CV.pdf" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 hover:scale-105 transition-colors duration-300 flex items-center gap-2"
+                            <a href="/Dhillon Thurairatnam CV.pdf" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 hover:scale-105 transition-colors duration-300 flex items-center gap-2 w-auto max-w-fit"
                                 target="_blank" rel="noopener noreferrer"
                             >
                                 Download CV <ArrowDownToLine />
