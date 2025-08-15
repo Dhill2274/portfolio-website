@@ -49,7 +49,7 @@ const projects = [
         id: 3,
         title: "MedicRecall Revision App",
         description: "As a client liasson, project manager and software developer, I developed \
-        a cross-platform flashcard-based revision app for the NHS, implementing a spaced repetition algorithm and delivering user notifications via a Python server hosted on Google Cloud.",
+        a cross-platform flashcard-based revision app for the NHS using a spaced repetition algorithm, delivering user notifications via a serverless Python script on Google Cloud and enforcing JWT/OAuth with 2FA.",
         link: "https://medicrecall.com",
         image: "/projects/medicrecall.png",
         tags: ["Flutter", "Firebase", "Google Cloud"]
