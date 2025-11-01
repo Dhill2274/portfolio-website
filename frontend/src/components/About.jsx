@@ -15,8 +15,8 @@ export const About = () => {
                         <h3 className="text-2xl font-semibold">Full-Stack Developer & AI Enthusiast</h3>
 
                         <p className="text-muted-foreground">
-                            With over 3 years of experience in computing, I have a particular interest in full-stack
-                            software development and AI.
+                            With over 3 years of academic and professional experience in computing, I have a particular interest in full-stack
+                            software development, AI and Data Science.
                         </p>
 
                         <p className="text-muted-foreground">
@@ -78,12 +78,12 @@ export const About = () => {
                             <div className="flex items-start gap-4">
 
                                 <div className="p-3 rounded-full bg-primary/10">
-                                    <Handshake className="h-6 w-6 text-primary"/>
+                                    <FolderClock className="h-6 w-6 text-primary"/>
                                 </div>
                                 <div className="text-left">
-                                    <h4 className="font-semibold text-lg">Team Collaboration</h4>
+                                    <h4 className="font-semibold text-lg">Project management</h4>
                                     <p className="text-muted-foreground">
-                                        Experience in effective communication and cross-functional collaboration.
+                                        Managing project lifecycles from conception to delivery through team coordination and client communication.
                                     </p>
                                 </div>
                             </div>

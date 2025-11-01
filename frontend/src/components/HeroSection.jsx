@@ -26,7 +26,7 @@ export const HeroSection = () => {
                     </h1>
 
                     <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3"> 
-                        I am currently pursuing a Master's degree in Artificial Intelligence at King's College London and 
+                        I am currently a Machine Learning Engineering Intern at VSim and I
                         hold a Bachelor's degree in Computer Science from the University of Bristol, where I graduated with a 1st class honours.
                     </p>
 
