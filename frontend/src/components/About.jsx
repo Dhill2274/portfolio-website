@@ -1,4 +1,4 @@
-import { ArrowDownToLine, BrainCircuit, Code, Handshake, SendHorizonal } from "lucide-react";
+import { ArrowDownToLine, BrainCircuit, Code, FolderClock, Handshake, SendHorizonal } from "lucide-react";
 
 export const About = () => {
     return (
